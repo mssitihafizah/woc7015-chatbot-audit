@@ -1,0 +1,1 @@
+candidate_id,run_id,timestamp_utc,commit_hash,model,topic,temperature,seed,memory,test_type,category,prompt_id,pair_id,role,run_number,session_id,turn_number,prompt,response,label,label_reason,audit_verdict,rater2_label,latency_ms,prompt_tokens,completion_tokens,error
