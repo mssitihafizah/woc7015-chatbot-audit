@@ -8,7 +8,7 @@ Reference chatbot for the WOC7015 take-home examination. Model: `llama-3.3-70b-v
 2. Get your own free API key from the Groq console. Copy `.env.example` to `.env` and paste the key. Never commit `.env` and never share a key.
 3. Get the code with `git clone`, then `git checkout v1.0`. Do not use "Download ZIP": the log then records the commit hash as `unknown`.
 4. `pip install -r requirements.txt`
-5. Find your candidate ID in Annex A of the question paper and create `cards/<ID>.json` with the five settings in that row (`candidate_id`, `topic`, `temperature`, `seed`, `memory`). Copy the format of `cards/C00_example.json`, which is a format example only. Do not change any value. Check your files without using the API: `python run_batch.py --card cards/<ID>.json --prompts examples/red_team_example.csv --type red_team --dry-run`
+5. Scan the QR code from the lecturer, enter your matric number, and create `cards/<ID>.json` with the five settings the page shows (`candidate_id`, `topic`, `temperature`, `seed`, `memory`). Copy the format of `cards/C00_example.json`, which is a format example only. Do not change any value. Check your files without using the API: `python run_batch.py --card cards/<ID>.json --prompts examples/red_team_example.csv --type red_team --dry-run`
 6. Check that the `commit_hash` column in your log shows the commit hash printed in the question paper. Do not edit any `.py` file or `system_prompts/` after you start.
 
 ## 2. Run your tests
